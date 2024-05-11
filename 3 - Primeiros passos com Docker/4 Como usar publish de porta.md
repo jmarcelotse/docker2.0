@@ -13,8 +13,11 @@ O comando docker container run -d -p 8080:80 nginx faz o seguinte:
 Portanto, quando você executa docker container run -d -p 8080:80 nginx, o Docker cria e executa um novo contêiner usando a imagem do Nginx, executando-o em segundo plano e mapeando a porta 8080 do host para a porta 80 do contêiner. Isso permite que você acesse o servidor web Nginx em seu navegador usando o endereço http://localhost:8080.
 
 docker container ls
+
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          **PORTS**                                   NAMES
+
 765c2ae28a2b   nginx     "/docker-entrypoint.…"   25 seconds ago   Up 24 seconds   **0.0.0.0:8080->80/tcp, :::8080->80/tcp**   kind_margulis
+
 8a898a207eec   nginx     "/docker-entrypoint.…"   21 minutes ago   Up 21 minutes   **80/tcp**                                  mystifying_engelbart
 
 **docker container stop 8a898a207eec**
