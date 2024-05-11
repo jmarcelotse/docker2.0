@@ -14,7 +14,7 @@ Portanto, quando você executa docker container run -d -p 8080:80 nginx, o Docke
 
 docker container ls
 
-CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          **PORTS**                                   NAMES
+CONTAINER ID...IMAGE.....COMMAND..................CREATED.........STATUS...........**PORTS**...................................NAMES
 
 765c2ae28a2b   nginx     "/docker-entrypoint.…"   25 seconds ago   Up 24 seconds   **0.0.0.0:8080->80/tcp, :::8080->80/tcp**   kind_margulis
 
