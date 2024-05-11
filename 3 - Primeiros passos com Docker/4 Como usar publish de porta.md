@@ -77,7 +77,7 @@ O comando docker container rm -f $(docker container ls -qa) é uma maneira de re
 
 1 - docker container ls -qa: Este comando lista todos os IDs de contêineres Docker presentes no sistema, tanto em execução quanto parados.
 
-2 - *$():* Esta é uma sintaxe em shell (como bash) que executa o comando dentro dos parênteses e substitui a saída desse comando na linha de comando principal. Ou seja, $(docker container ls -qa) será substituído pela lista de IDs de contêineres.
+2 - **$():** Esta é uma sintaxe em shell (como bash) que executa o comando dentro dos parênteses e substitui a saída desse comando na linha de comando principal. Ou seja, **$(docker container ls -qa)** será substituído pela lista de IDs de contêineres.
 
 3 - docker container rm -f: Este comando instrui o Docker a remover um ou mais contêineres do sistema, mesmo que estejam em execução (-f força a remoção).
 
