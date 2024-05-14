@@ -15,25 +15,25 @@ Aqui está um exemplo básico de um Dockerfile:
 Aqui está um exemplo básico de um Dockerfile:
 
 **Use uma imagem base**
-FROM ubuntu:latest
 
-**Execute comandos para instalar pacotes ou configurar o ambient**
+    FROM ubuntu:latest
 
-RUN
+**Execute comandos para instalar pacotes ou configurar o ambiente**
+
     apt-get update && apt-get install -y \ nginx \ && rm -rf /var/lib/apt/lists/*
 
 **Copie seus arquivos para dentro da imagem**
 
-COPY ./meu_app /var/www/meu_app
+    COPY ./meu_app /var/www/meu_app
 
 **Defina variáveis de ambiente**
 
-ENV PORT=80
+    ENV PORT=80
 
 **Exponha portas**
 
-EXPOSE $PORT
+    EXPOSE $PORT
 
 **Comando padrão a ser executado quando o contêiner é iniciado**
 
-CMD ["nginx", "-g", "daemon off;"]
+    CMD ["nginx", "-g", "daemon off;"]
