@@ -31,3 +31,6 @@ Aqui está um exemplo básico de um Dockerfile:
 
     Comando padrão a ser executado quando o contêiner é iniciado
     CMD ["nginx", "-g", "daemon off;"]
+
+Depois de criar seu Dockerfile, você pode construir sua imagem usando o comando docker build, por exemplo:
+    docker build -t nome_da_imagem .
