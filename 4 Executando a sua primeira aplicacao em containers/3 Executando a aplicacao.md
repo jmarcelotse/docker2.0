@@ -7,3 +7,7 @@ npm install
 node server.js
 
 **Rodando a aplicacao dentro do container.**
+
+Essa nao seria a maneira corretada de trabalhar com docker.
+
+Melhor forma seria com imagem.
