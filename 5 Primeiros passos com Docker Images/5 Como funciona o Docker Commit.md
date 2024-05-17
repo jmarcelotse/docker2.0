@@ -101,5 +101,3 @@ O comando **docker commit** no Docker é utilizado para criar uma nova imagem a 
 **O que é o Docker Commit?**
 
 O **docker commit** cria uma imagem Docker nova a partir de um contêiner em execução ou parado, incluindo todas as modificações feitas nesse contêiner, como instalações de pacotes, alterações em arquivos de configuração e outros ajustes.
-
-# Como Funciona o Docker Commit?
