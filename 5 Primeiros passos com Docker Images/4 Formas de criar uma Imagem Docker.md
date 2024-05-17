@@ -12,8 +12,6 @@ Dentro do Dockerfile, você escreverá as instruções para construir sua imagem
 
 Aqui está um exemplo básico de um Dockerfile:
 
-Aqui está um exemplo básico de um Dockerfile:
-
     #Use uma imagem base
     FROM ubuntu:latest
 
