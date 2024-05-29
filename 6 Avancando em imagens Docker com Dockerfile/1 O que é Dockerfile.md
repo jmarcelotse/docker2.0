@@ -15,6 +15,7 @@ Aqui estão alguns pontos principais para entender o que é e como funciona um D
 3. **Definição de Variáveis**: A instrução **ENV** define variáveis de ambiente que estarão disponíveis durante a construção da imagem e no contêiner em execução.
 
     ENV APP_HOME /app
+
     WORKDIR $APP_HOME
 
 4. **Comando de Inicialização**: A instrução **CMD** ou **ENTRYPOINT** define o comando a ser executado quando um contêiner é iniciado a partir da imagem. **CMD** é usado para fornecer argumentos padrão para o **ENTRYPOINT** ou para definir um comando padrão se **ENTRYPOINT** não for especificado.
