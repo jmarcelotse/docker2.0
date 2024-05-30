@@ -5,7 +5,6 @@ O Dockerfile é uma ferramenta poderosa que permite definir e automatizar a cons
 Você pode criar imagens base personalizadas a partir de imagens oficiais, instalando apenas os pacotes e dependências necessários para a sua aplicação
 
     FROM ubuntu:20.04
-
     RUN apt-get update && apt-get install -y curl vim
 
 2. **Automatizar a Instalação de Dependências**
