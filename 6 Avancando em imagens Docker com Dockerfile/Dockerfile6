@@ -1,0 +1,8 @@
+FROM ubuntu
+RUN apt update && apt install curl -y
+LABEL contato="jmarcelotse@hotmail.com"
+LABEL versao="1.0"
+WORKDIR /app
+COPY arquivo.txt .
+ADD https://www.google.com pagina.html
+ADD teste.tar.gz ./
