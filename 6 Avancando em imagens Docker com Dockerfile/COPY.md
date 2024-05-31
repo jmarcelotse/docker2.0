@@ -101,3 +101,16 @@ Embora **COPY** e **ADD** possam parecer semelhantes, existem diferenças import
 # Conclusão
 
 A instrução **COPY** no Dockerfile é uma ferramenta essencial para transferir arquivos do host para a imagem Docker durante o processo de construção. Sua simplicidade e previsibilidade a tornam a escolha preferida para a maioria dos casos em que é necessário incluir arquivos e diretórios na imagem.
+
+####
+
+Dockerfile4
+
+FROM ubuntu
+RUN apt update && apt install curl -y
+WORKDIR /app
+COPY arquivo.txt .
+
+    docker build -t ubuntu-curl -f Dockerfile4 .
+
+    docker container run -it ubuntu-curl /bin/bash
