@@ -1,0 +1,5 @@
+FROM ubuntu
+RUN apt update && apt install curl -y
+COPY --chown=noahtse:noahtse --chmod=777 "./arquivo.txt" .
+RUN useradd noahtse
+USER noahtse
